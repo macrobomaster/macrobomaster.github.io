@@ -2380,7 +2380,7 @@ textarea.form-control {
 
 .img-rounded {
   border-radius: 12px;
-  transition: opacity 0.5s ease 0s;
+  transition: opacity 1s ease 0s;
   max-width: 100%;
 }
 
@@ -5959,11 +5959,11 @@ textarea.form-control {
   -o-animation-fill-mode: both;
   animation-fill-mode: both;
   
-  -webkit-animation-duration: 0.5s;
-  -moz-animation-duration: 0.5s;
-  -ms-animation-duration: 0.5s;
-  -o-animation-duration: 0.5s;
-  animation-duration: 0.5s;
+  -webkit-animation-duration: 1s;
+  -moz-animation-duration: 1s;
+  -ms-animation-duration: 1s;
+  -o-animation-duration: 1s;
+  animation-duration: 1s;
 
   -webkit-animation-play-state: running;
   -moz-animation-play-state: running;
