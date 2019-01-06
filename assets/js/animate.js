@@ -11,8 +11,9 @@ jQuery(function($) {
   var doAnimations = function() {
     
     // Calc current offset and get all animatables
-    var offset = $(window).scrollTop() + $(window).height(),
+    var bottom_position = $(window).scrollTop() + $(window).height(),
         $animatables = $('.animatable');
+    var top_position = $(window).scrollTop();
     
     // Unbind scroll handler if we have no animatables
     if ($animatables.length == 0) {
@@ -22,7 +23,10 @@ jQuery(function($) {
     // Check all animatables and animate them if necessary
 		$animatables.each(function(i) {
        var $animatable = $(this);
-			if (($animatable.offset().top + $animatable.height()) < offset) {
+      if ((($animatable.offset().top + $animatable.outerHeight()) >= top_position) &&
+        (($animatable.offset().top) <= bottom_position)
+
+      ) {
         $animatable.removeClass('animatable').addClass('animated');
 			}
     });
