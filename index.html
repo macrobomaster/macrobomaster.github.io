@@ -24,6 +24,9 @@
         crossorigin="anonymous">
     <link href="assets/css/nucleo-icons.css" rel="stylesheet" />
 
+    <!-- Smooth Scroll -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 </head>
 
 <body>
@@ -31,8 +34,8 @@
     <!-- Navigation Bar -->
     <nav class="navbar navbar-expand-md fixed-top navbar-transparent" color-on-scroll="500">
 
-        <div class="container">
-            <div class="navbar-translate">
+        <div class="container container-fluid">
+            <div class="navbar-translate navbar-header">
                 <button class="navbar-toggler navbar-toggler-right navbar-burger" type="button" data-toggle="collapse"
                     data-target="#myNavbar" data-target="#navbarToggler" aria-controls="navbarTogglerDemo02"
                     aria-expanded="false" aria-label="Toggle navigation">
@@ -139,7 +142,7 @@
         <!-- Main -->
         <div class="main">
             <!-- About Us -->
-            <div id="about" class="section text-center">
+            <div id="about" class="section text-center container-fluid">
                 <div class="container">
                     <div class="row">
                         <div class="col-md-8 ml-auto mr-auto">
@@ -209,7 +212,7 @@
             </div>
 
             <!-- Projects -->
-            <div id="projects" class="section text-center" id="carousel" style="background-color: #292E39">
+            <div id="projects" class="section text-center container-fluid" id="carousel" style="background-color: #292E39">
                 <div class="container">
                     <h1 class="title" style="color:white">Projects</h1>
                     <div class="row">
@@ -268,7 +271,7 @@
                 </div>
             </div>
             <!-- Our Team -->
-            <div id="team" class="section section-dark text-center">
+            <div id="team" class="section section-dark text-center container-fluid">
                 <div class="container">
                     <h1 class="title">Our Team</h1>
                     <h2 class="title">Executives</h2>
@@ -456,7 +459,7 @@
             </div>
 
             <!-- Sponsors -->
-            <div id="sponsors" class="section text-center">
+            <div id="sponsors" class="section text-center container-fluid">
                 <div class="container">
                     <h1 class="title">Sponsors</h1>
                     <div class="row">
@@ -476,7 +479,7 @@
             </div>
 
             <!-- instagram gallery -->
-            <div id="instagram" class="section section-dark text-center">
+            <div id="instagram" class="section section-dark text-center container-fluid">
                 <div class="container">
                     <h1 class="title">Our Instagram Gallery</h1>
                     <br />
@@ -489,7 +492,7 @@
             </div>
 
             <!-- Contact Us -->
-            <div id="contact" class="section text-center">
+            <div id="contact" class="section text-center container-fluid">
                 <div class="container">
                     <h1 class="title">Contact Us</h1>
                     <div class="row">
@@ -645,7 +648,7 @@
         </div>
 
         <!-- Donate Us -->
-        <div id="donate" class="section text-center">
+        <div id="donate" class="section text-center container-fluid">
             <div class="container">
                 <h1 class="title">Why Sponsors Us</h1>
                 <div class="row">
@@ -713,7 +716,8 @@
                 </div>
             </div>
         </footer>
-
+        
+        <!-- smooth scroll -->
         <script>
             $(document).ready(function () {
                 // Add scrollspy to <body>
@@ -770,9 +774,11 @@
 <!--  Paper Kit Initialization and functons -->
 <script src="assets/js/paper-kit.js?v=2.1.0"></script>
 
-<!-- plugin for the instgram show -->
+<!-- Plugin for the instgram show -->
 <script src="assets/js/infinitescroll.js"></script>
 <script src="assets/js/jquery.instashow-lite.packaged.js"></script>
+
+
 
 
 </html>
