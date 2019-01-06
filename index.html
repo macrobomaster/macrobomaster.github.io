@@ -31,6 +31,7 @@
 
 <body>
 
+
     <!-- Navigation Bar -->
     <nav class="navbar navbar-expand-md fixed-top navbar-transparent" color-on-scroll="500">
 
@@ -92,6 +93,62 @@
             </div>
         </div>
     </nav>
+
+
+
+    <!-- back to top -->
+    <style>
+
+
+        #myBtn {
+          display: none;
+          position: fixed;
+          bottom: 20px;
+          right: 30px;
+          z-index: 99;
+          font-size: 40px;
+          border: none;
+          outline: none;
+          color: rgba(0, 0, 0, 0.7);
+          background-color: transparent;
+          /* color: white; */
+          cursor: pointer;
+          /* padding: 15px;
+          border-radius: 40px; */
+          -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+        }
+        
+        #myBtn:hover {
+          color: rgba(0, 0, 0, 0.5);
+        }
+        </style>
+    <button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fas fa-chevron-circle-up"></i></button>
+    <script>
+        // When the user scrolls down 20px from the top of the document, show the button
+        window.onscroll = function () { scrollFunction() };
+
+        function scrollFunction() {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                document.getElementById("myBtn").style.display = "block";
+            } else {
+                document.getElementById("myBtn").style.display = "none";
+            }
+        }
+
+        // When the user clicks on the button, scroll to the top of the document
+        function topFunction() {
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
+        }
+    </script>
+
+
+
+
     <!-- Page -->
     <div class="wrapper">
         <!-- Header -->
@@ -510,89 +567,89 @@
                                 var uluru = { lat: 43.259121, lng: -79.920842 };
                                 // The map, centered at Uluru
                                 var map = new google.maps.Map(document.getElementById('map-container'), {
-                                    zoom: 15, 
+                                    zoom: 15,
                                     center: uluru,
                                     styles: [
-                                        {elementType: 'geometry', stylers: [{color: '#242f3e'}]},
-                                        {elementType: 'labels.text.stroke', stylers: [{color: '#242f3e'}]},
-                                        {elementType: 'labels.text.fill', stylers: [{color: '#ba4848'}]},
+                                        { elementType: 'geometry', stylers: [{ color: '#242f3e' }] },
+                                        { elementType: 'labels.text.stroke', stylers: [{ color: '#242f3e' }] },
+                                        { elementType: 'labels.text.fill', stylers: [{ color: '#ba4848' }] },
                                         {
-                                        featureType: 'administrative.locality',
-                                        elementType: 'labels.text.fill',
-                                        stylers: [{color: '#9b0d0d'}]
+                                            featureType: 'administrative.locality',
+                                            elementType: 'labels.text.fill',
+                                            stylers: [{ color: '#9b0d0d' }]
                                         },
                                         {
-                                        featureType: 'poi',
-                                        elementType: 'labels.text.fill',
-                                        stylers: [{color: '#ba4848'}]
+                                            featureType: 'poi',
+                                            elementType: 'labels.text.fill',
+                                            stylers: [{ color: '#ba4848' }]
                                         },
                                         {
-                                        featureType: 'poi.park',
-                                        elementType: 'geometry',
-                                        stylers: [{color: '#263c3f'}]
+                                            featureType: 'poi.park',
+                                            elementType: 'geometry',
+                                            stylers: [{ color: '#263c3f' }]
                                         },
                                         {
-                                        featureType: 'poi.park',
-                                        elementType: 'labels.text.fill',
-                                        stylers: [{color: '#6b9a76'}]
+                                            featureType: 'poi.park',
+                                            elementType: 'labels.text.fill',
+                                            stylers: [{ color: '#6b9a76' }]
                                         },
                                         {
-                                        featureType: 'road',
-                                        elementType: 'geometry',
-                                        stylers: [{color: '#38414e'}]
+                                            featureType: 'road',
+                                            elementType: 'geometry',
+                                            stylers: [{ color: '#38414e' }]
                                         },
                                         {
-                                        featureType: 'road',
-                                        elementType: 'geometry.stroke',
-                                        stylers: [{color: '#212a37'}]
+                                            featureType: 'road',
+                                            elementType: 'geometry.stroke',
+                                            stylers: [{ color: '#212a37' }]
                                         },
                                         {
-                                        featureType: 'road',
-                                        elementType: 'labels.text.fill',
-                                        stylers: [{color: '#9ca5b3'}]
+                                            featureType: 'road',
+                                            elementType: 'labels.text.fill',
+                                            stylers: [{ color: '#9ca5b3' }]
                                         },
                                         {
-                                        featureType: 'road.highway',
-                                        elementType: 'geometry',
-                                        stylers: [{color: '#720a0a'}]
+                                            featureType: 'road.highway',
+                                            elementType: 'geometry',
+                                            stylers: [{ color: '#720a0a' }]
                                         },
                                         {
-                                        featureType: 'road.highway',
-                                        elementType: 'geometry.stroke',
-                                        stylers: [{color: '#1f2835'}]
+                                            featureType: 'road.highway',
+                                            elementType: 'geometry.stroke',
+                                            stylers: [{ color: '#1f2835' }]
                                         },
                                         {
-                                        featureType: 'road.highway',
-                                        elementType: 'labels.text.fill',
-                                        stylers: [{color: '#ba4848'}]
+                                            featureType: 'road.highway',
+                                            elementType: 'labels.text.fill',
+                                            stylers: [{ color: '#ba4848' }]
                                         },
                                         {
-                                        featureType: 'transit',
-                                        elementType: 'geometry',
-                                        stylers: [{color: '#2f3948'}]
+                                            featureType: 'transit',
+                                            elementType: 'geometry',
+                                            stylers: [{ color: '#2f3948' }]
                                         },
                                         {
-                                        featureType: 'transit.station',
-                                        elementType: 'labels.text.fill',
-                                        stylers: [{color: '#d59563'}]
+                                            featureType: 'transit.station',
+                                            elementType: 'labels.text.fill',
+                                            stylers: [{ color: '#d59563' }]
                                         },
                                         {
-                                        featureType: 'water',
-                                        elementType: 'geometry',
-                                        stylers: [{color: '#17263c'}]
+                                            featureType: 'water',
+                                            elementType: 'geometry',
+                                            stylers: [{ color: '#17263c' }]
                                         },
                                         {
-                                        featureType: 'water',
-                                        elementType: 'labels.text.fill',
-                                        stylers: [{color: '#515c6d'}]
+                                            featureType: 'water',
+                                            elementType: 'labels.text.fill',
+                                            stylers: [{ color: '#515c6d' }]
                                         },
                                         {
-                                        featureType: 'water',
-                                        elementType: 'labels.text.stroke',
-                                        stylers: [{color: '#17263c'}]
+                                            featureType: 'water',
+                                            elementType: 'labels.text.stroke',
+                                            stylers: [{ color: '#17263c' }]
                                         }
-                                        ] 
-                                    });
+                                    ]
+                                });
                                 // The marker, positioned at Uluru
                                 var marker = new google.maps.Marker({ position: uluru, map: map, title: "MAC RoboMaster" });
                             }
@@ -639,7 +696,7 @@
                     </div>
                     <br />
 
-                  
+
                 </div>
             </div>
 
@@ -652,19 +709,20 @@
             <div class="container">
                 <h1 class="title">Why Sponsors Us</h1>
                 <div class="row">
-                        <div class="col-md-12 ml-auto mr-auto">
-                            <img src="./assets/img/logo_master.png" alt="" style="width:50%">
-                        </div>
+                    <div class="col-md-12 ml-auto mr-auto">
+                        <img src="./assets/img/logo_master.png" alt="" style="width:50%">
+                    </div>
 
                     <div class="col-md-12 ml-auto mr-auto">
-                            <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
-                                <input type="hidden" name="cmd" value="_s-xclick" />
-                                <input type="hidden" name="hosted_button_id" value="TMVJUH3SEQBGL" />
-                                <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif" border="0" name="submit"  alt="Donate with PayPal button" />
-                                <img alt="" border="0" src="https://www.paypal.com/en_CA/i/scr/pixel.gif" width="1" height="1" />
-                                </form>
-                                <br />
-                                <br />
+                        <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+                            <input type="hidden" name="cmd" value="_s-xclick" />
+                            <input type="hidden" name="hosted_button_id" value="TMVJUH3SEQBGL" />
+                            <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif"
+                                border="0" name="submit" alt="Donate with PayPal button" />
+                            <img alt="" border="0" src="https://www.paypal.com/en_CA/i/scr/pixel.gif" width="1" height="1" />
+                        </form>
+                        <br />
+                        <br />
 
                     </div>
 
@@ -674,7 +732,7 @@
                         <br />
                         <br />
                     </div>
-                    
+
                     <div class="col-md-12 ml-auto mr-auto">
                         <button class="btn btn-danger btn-lg btn-fill" onclick="location.href='https://goo.gl/forms/BddLTtGix7bhx8P02'"
                             type="button">Join Us</button>
@@ -716,7 +774,7 @@
                 </div>
             </div>
         </footer>
-        
+
         <!-- smooth scroll -->
         <script>
             $(document).ready(function () {
