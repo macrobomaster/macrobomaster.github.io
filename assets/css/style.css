@@ -1063,6 +1063,11 @@
     display: none;
 }
 
+.freebirdFormviewerViewFooterFooterContainer {
+    display: none !important
+}
+
+
 @media only screen and (min-width: 768px) {
     .demo-icons ul li {
         width: 20%;
