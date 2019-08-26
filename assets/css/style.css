@@ -1150,6 +1150,33 @@
     -webkit-animation: fadein 2s; /* Safari and Chrome */
     -o-animation: fadein 2s; /* Opera */
 }
+
+
+#myBtn {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 99;
+    font-size: 40px;
+    border: none;
+    outline: none;
+    color: rgba(0, 0, 0, 0.7);
+    background-color: transparent;
+    /* color: white; */
+    cursor: pointer;
+    /* padding: 15px;
+    border-radius: 40px; */
+    -webkit-transition: all 0.3s ease;
+-moz-transition: all 0.3s ease;
+-ms-transition: all 0.3s ease;
+-o-transition: all 0.3s ease;
+transition: all 0.3s ease;
+  }
+  
+  #myBtn:hover {
+    color: rgba(0, 0, 0, 0.5);
+  }
 @keyframes fadein {
     from {
         opacity:0;
